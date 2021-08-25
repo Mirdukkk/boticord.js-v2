@@ -1,0 +1,31 @@
+{
+  "name": "boticord.js",
+  "version": "1.0.0",
+  "description": "An API wrapper for https://boticord.top/ written in JS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/san4ern/boticord.js.git"
+  },
+  "keywords": [
+    "boticord",
+    "js",
+    "javascript",
+    "discord",
+    "discord.js"
+  ],
+  "author": "san4ouZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/san4ern/boticord.js/issues"
+  },
+  "homepage": "https://github.com/san4ern/boticord.js#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "socket.io-client": "^3.0.1"
+  },
+  "devDependencies": {}
+}
