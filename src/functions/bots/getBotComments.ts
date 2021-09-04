@@ -1,13 +1,14 @@
 import { BotiCordError } from "../../struct/errors/BotiCordError";
 import { BotCommentary } from "../../struct/classes/BotCommentary";
 import fetch from 'node-fetch';
+import config from "../../config";
 
 export default async function getBotComments(id: string) {
     const searchID = String(id);
     let comments = [];
     try {
-        const req =  await fetch(`https://api.boticord.top/v1/bot/${searchID}/comments`)
-            .then(r => r.json());
+        const req =  await fetch(`${config}/bot/${searchID}/comments`)
+            .then((r: { json: () => any; }) => r.json());
 
         for(const comment of req) {
             const commentary = new BotCommentary(comment);

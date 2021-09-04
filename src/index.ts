@@ -3,6 +3,7 @@ import findBots from './functions/bots/findBots';
 import findBot from './functions/bots/findBot';
 import getBotComments from './functions/bots/getBotComments';
 import { io as socket } from "socket.io-client";
+import config from './config'
 
 import { BotiCordError } from './struct/errors/BotiCordError';
 
@@ -41,11 +42,13 @@ class BotiCordAPI {
         }
 
         if(this.ws) {
-            this.ws = socket('wss://socket.boticord.top');
+            this.ws = socket(config.socketPath);
 
-            this.ws.emit('login', {
-                token: this.token
-            })
+            this.ws.on('connection',() => {
+                this.ws.emit('login', {
+                    token: this.token
+                });
+            });
         }
     }
 }
