@@ -44,7 +44,7 @@ class BotiCordAPI {
         if(this.ws) {
             this.ws = socket(config.socketPath);
 
-            this.ws.on('connection',() => {
+            this.ws.on('connect', () => {
                 this.ws.emit('login', {
                     token: this.token
                 });
