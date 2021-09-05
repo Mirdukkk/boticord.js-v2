@@ -1,6 +1,7 @@
 import { BotiCordError } from '../../struct/errors/BotiCordError';
 import fetch from 'node-fetch';
 import { BotiCordAPI } from "../../index";
+import config from "../../config";
 
 export default async function (api: BotiCordAPI) {
     const guildsCount = api.adapter.getGuilds();
@@ -14,7 +15,7 @@ export default async function (api: BotiCordAPI) {
     });
 
     try {
-        return await fetch('https://boticord.top/api/stats', {
+        return await fetch(config.hostname + 'api/stats', {
             method: 'POST',
             headers: {
                 'Authorization': api.token,
