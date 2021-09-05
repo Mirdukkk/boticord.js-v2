@@ -7,7 +7,7 @@ export default async function getBotComments(id: string) {
     const searchID = String(id);
     let comments = [];
     try {
-        const req =  await fetch(`${config}/bot/${searchID}/comments`)
+        const req =  await fetch(`${config.apiURL}/bot/${searchID}/comments`)
             .then((r: { json: () => any; }) => r.json());
 
         for(const comment of req) {
