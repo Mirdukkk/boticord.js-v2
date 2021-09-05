@@ -9,7 +9,7 @@ export default async function (query: string) {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: JSON.stringify({term: String(query)})
+            body: JSON.stringify({ term: String(query) })
         })
             .then((r: { json: () => any; }) => r.json());
     } catch (e) {
