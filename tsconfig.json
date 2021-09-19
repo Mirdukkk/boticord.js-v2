@@ -1,14 +1,43 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "./dist",
     "strict": true,
-    "allowSyntheticDefaultImports": true
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2019",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "removeComments": false,
+    "alwaysStrict": true,
+    "pretty": true,
+    "incremental": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "declarationDir": "./types",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [ "src/*" ]
+    },
+    "outDir": "./dist",
+    "plugins": [
+      { "transform": "@zerollup/ts-transform-paths" }
+    ]
   },
-  "include": [
-    "src"
+  "exclude": [
+    "node_modules",
+    "dist",
+    "types"
   ],
-  "exclude": [ "node_modules" ]
+  "include": [
+    "src/**/*"
+  ]
 }
