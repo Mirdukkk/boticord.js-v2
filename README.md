@@ -17,6 +17,6 @@ An API wrapper for https://boticord.top/ written in JS
 You can get support [here](https://discord.gg/GQF3ANKFuw) or on [BotiCord support server](https://discord.gg/hkHjW8a) via @san4ouZ#7609 mention
 
 # Contributing
-Feel free to contribute. In your changes you must describe what do you change
+Feel free to contribute. In your changes you must describe what you are changing
 # Also thanks
 Thank you, [Mirdukkk](https://github.com/Mirdukkk), for banner <3
