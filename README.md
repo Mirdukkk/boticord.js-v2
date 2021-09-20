@@ -24,4 +24,3 @@ via @san4ouZ#7609 mention
 
 ## Contributing
 Feel free to create a PR. In your changes you must describe what do you change.
-
