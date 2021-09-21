@@ -11,12 +11,16 @@
 </div>
 
 # BotiCord.js
-An API wrapper for https://boticord.top/ written in JS
+An API wrapper for https://boticord.top/ written in TS for TS/JS
 
-# Additional information
-You can get support [here](https://discord.gg/GQF3ANKFuw) or on [BotiCord support server](https://discord.gg/hkHjW8a) via @san4ouZ#7609 mention
+## How to use
+Check examples [here](https://github.com/boticord/boticord.js/blob/master/examples).
+Check documentation [here](https://js.boticord.top).
+**If you have typescript in your project, please enable skipLibCheck property in your tsconfig.json**
 
-# Contributing
-Feel free to contribute. In your changes you must describe what you are changing
-# Also thanks
-Thank you, [Mirdukkk](https://github.com/Mirdukkk), for banner <3
+## Additional information
+You can get support [here](https://discord.gg/GQF3ANKFuw) or on [BotiCord support server](https://discord.gg/hkHjW8a) 
+via @san4ouZ#7609 mention
+
+## Contributing
+Feel free to create a PR. In your changes you must describe what do you change.
