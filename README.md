@@ -23,4 +23,4 @@ You can get support [here](https://discord.gg/GQF3ANKFuw) or on [BotiCord suppor
 via @san4ouZ#7609 mention
 
 ## Contributing
-Feel free to create a PR. In your changes you must describe what do you change.
+Feel free to create a PR. In your changes you must describe what would you like to change.
