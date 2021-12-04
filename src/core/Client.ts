@@ -41,13 +41,14 @@ export class Client {
     const response = await request(`${Endpoints.MAIN_API}/v${this.options.apiVersion}/stats`, {
       method: 'POST',
       headers: {
+        'Content-Type': 'application/json',
         Authorization: this.options.token
       },
-      body: {
+      body: JSON.stringify({
         servers: await this.adapter.getServers() ?? 0,
         users: await this.adapter.getUsers() ?? 0,
         shards: await this.adapter.getShards() ?? 0
-      }
+      })
     })
 
     if (response.statusCode === 404) {
