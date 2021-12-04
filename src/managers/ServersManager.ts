@@ -2,9 +2,7 @@ import { ClientOptions } from '@src/core/ClientOptions'
 import { request } from 'undici'
 import { Endpoints } from '@src/core/Endpoints'
 import { ServersSearchResponse } from '@src/rest/ServersSearchResponse'
-import { BotInformationResponse } from '@src/rest/BotInformationResponse'
 import { ServerInformationResponse } from '@src/rest/ServerInformationResponse'
-import { BotCommentResponse } from '@src/rest/BotCommentResponse'
 import { ServerCommentResponse } from '@src/rest/ServerCommentResponse'
 import { ServerUpdatePayload } from '@src/rest/ServerUpdatePayload'
 import { ServerUpdateResponse } from '@src/rest/ServerUpdateResponse'
@@ -25,9 +23,9 @@ export class ServersManager {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       },
-      body: {
+      body: JSON.stringify({
         term: query
-      },
+      }),
     })
 
     return response.body.json()
@@ -79,8 +77,9 @@ export class ServersManager {
 
     const response = await request(`${Endpoints.MAIN_API}/v${this.options.apiVersion}/server`, {
       method: 'POST',
-      body: info,
+      body: JSON.stringify(info),
       headers: {
+        'Content-Type': 'application/json',
         Authorization: this.options.token
       }
     })

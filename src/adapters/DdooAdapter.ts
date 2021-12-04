@@ -16,7 +16,6 @@ export class DdooAdapter implements Adapter {
   }
 
   getUsers(): Promise<number> {
-    // @ts-ignore
     return this.client.users.cache.size()
   }
 
@@ -37,7 +36,6 @@ export class ShardedDdooAdapter implements Adapter {
   }
 
   getUsers(): Promise<number> {
-    // @ts-ignore
     return this.client.users.cache.size({ shard: 'all' })
   }
 

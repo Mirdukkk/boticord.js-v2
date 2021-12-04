@@ -24,9 +24,9 @@ export class BotsManager {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
       },
-      body: {
+      body: JSON.stringify({
         term: query
-      },
+      }),
     })
 
     return response.body.json()
@@ -99,8 +99,9 @@ export class BotsManager {
 
     const response = await request(`${Endpoints.MAIN_API}/v${this.options.apiVersion}/stats`, {
       method: 'POST',
-      body,
+      body: JSON.stringify(body),
       headers: {
+        'Content-Type': 'application/json',
         Authorization: this.options.token
       },
     })
