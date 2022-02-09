@@ -7,6 +7,7 @@
   "types": "types/index.d.ts",
   "scripts": {
     "prepublishOnly": "npm run build",
+    "docs": "npm install && npm install discordoo eris discord.js --no-save && node ./typedoc.js",
     "build": "ttsc"
   },
   "repository": {
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@zerollup/ts-transform-paths": "^1.7.18",
     "ttypescript": "^1.5.12",
+    "typedoc": "^0.22.11",
     "typescript": "^4.4.3"
   },
   "peerDependencies": {

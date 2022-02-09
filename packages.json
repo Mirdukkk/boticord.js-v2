@@ -1,0 +1,8 @@
+{
+    "packages": [
+        "adapters",
+        "core",
+        "managers",
+        "rest"
+    ]
+}

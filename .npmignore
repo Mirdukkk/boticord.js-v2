@@ -1,5 +1,6 @@
 .idea
 .github
 examples
+docs
 tsconfig.json
 DEVELOPMENT.md
