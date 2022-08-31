@@ -1,6 +1,6 @@
 {
   "name": "boticord.js",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "An API wrapper for https://boticord.top/ written in TS for JS/TS",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -28,17 +28,17 @@
   "homepage": "https://github.com/boticord/boticord.js#readme",
   "dependencies": {
     "tslib": "^2.3.1",
-    "undici": "^4.6.0"
+    "undici": "^5.10.0"
   },
   "devDependencies": {
     "@zerollup/ts-transform-paths": "^1.7.18",
     "ttypescript": "^1.5.12",
     "typedoc": "^0.22.11",
-    "typescript": "^4.4.3"
+    "typescript": "^4.9.0-dev.20220830"
   },
   "peerDependencies": {
-    "discord.js": "^14.0.0",
-    "discordoo": "^0.9.9",
+    "discord.js": "^14.3.0",
+    "discordoo": "^0.11.3",
     "eris": "^0.15.1"
   },
   "peerDependenciesMeta": {

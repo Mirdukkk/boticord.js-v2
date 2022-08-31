@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es2019",
+    "module": "ES6",
+    "moduleResolution": "NodeNext",
+    "target": "ES6",
     "lib": [
       "es2020",
       "dom"
