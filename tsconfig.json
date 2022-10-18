@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "module": "ES6",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node",
     "target": "ES6",
     "lib": [
       "es2020",
