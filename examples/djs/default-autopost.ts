@@ -1,11 +1,13 @@
 import { Client as BotiCord, DjsAdapter } from '../../src' // from 'boticord.js'
+// const { BotiCord: Client } = require('boticord.js') if node.js
+
 const client: any = {} // Discord.js client
 
 const adapter = new DjsAdapter(client) // pass djs client to adapter
 
 const boticord = new BotiCord({
   token: 'YOUR_BOTICORD_API_TOKEN',
-  apiVersion: 1
+  apiVersion: 2
 }, adapter)
 
 boticord.botStatsAutopost()
